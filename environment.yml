@@ -1,0 +1,6 @@
+name: venv_dbtlearn
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # add other packages as needed
