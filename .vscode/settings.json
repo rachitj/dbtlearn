@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["datawarehouse"]
+  "cSpell.words": ["datawarehouse"],
+  "dbt.perspectiveTheme": "Monokai"
 }
