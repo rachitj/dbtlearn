@@ -94,3 +94,18 @@ COPY INTO raw_hosts (id, name, is_superhost, created_at, updated_at)
 from 's3://dbtlearn/hosts.csv'
 FILE_FORMAT = (type = 'CSV' skip_header = 1
 FIELD_OPTIONALLY_ENCLOSED_BY = '"');
+
+snowflake -dbt connections
+Enter a number: 1
+account (https://<this_value>.snowflakecomputing.com): GSIIRUE-FT69783
+user (dev username): dbt
+[1] password
+[2] keypair
+[3] sso
+Desired authentication type option (enter a number): 1
+password (dev password):
+role (dev role): TRANSFORM
+warehouse (warehouse name): COMPUTE_WH
+database (default database that dbt will build objects in): AIRBNB
+schema (default schema that dbt will build objects in): DEV
+threads (1 or more) [1]: 1
